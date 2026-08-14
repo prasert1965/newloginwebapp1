@@ -14,6 +14,7 @@ def login_user(username,password):
 	c.execute('SELECT * FROM userstable WHERE username =? AND password = ?',(username,password))
 	data = c.fetchall()
 	return data
+
 elif choice == "SignUp":
 		st.subheader("Create an Account")
 
