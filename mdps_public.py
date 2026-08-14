@@ -15,15 +15,7 @@ def login_user(username,password):
 	data = c.fetchall()
 	return data
 
- #   elif choice == "SignUp":
- #      st.subheader("Create an Account")
-	new_user = st.text_input('Username')
-	new_passwd = st.text_input('Password',type='password')
-	if st.button('SignUp'):
-		create_usertable()
-		add_userdata(new_user,make_hashes(new_passwd))
-		st.success("You have successfully created an account.Go to the Login Menu to login")
-
+ 
 import hashlib
 def make_hashes(password):
 	return hashlib.sha256(str.encode(password)).hexdigest()
@@ -77,7 +69,14 @@ def main():
 					st.dataframe(clean_db)
 			else:
 				st.warning("Incorrect Username/Password")
-
+    elif choice == "SignUp":
+       st.subheader("Create an Account")
+	new_user = st.text_input('Username')
+	new_passwd = st.text_input('Password',type='password')
+	if st.button('SignUp'):
+		create_usertable()
+		add_userdata(new_user,make_hashes(new_passwd))
+		st.success("You have successfully created an account.Go to the Login Menu to login")
 
 if __name__ == '__main__':
 	main()
