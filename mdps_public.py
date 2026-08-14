@@ -26,14 +26,14 @@ import pandas as pd
 #		add_userdata(new_user,make_hashes(new_passwd))
 #		st.success("You have successfully created an account.Go to the Login Menu to login")
 		
-import hashlib
-def make_hashes(password):
-	return hashlib.sha256(str.encode(password)).hexdigest()
+# import hashlib
+# def make_hashes(password):
+#	return hashlib.sha256(str.encode(password)).hexdigest()
 
-def check_hashes(password,hashed_text):
-	if make_hashes(password) == hashed_text:
-		return hashed_text
-	return False
+#def check_hashes(password,hashed_text):
+#	if make_hashes(password) == hashed_text:
+#		return hashed_text
+#	return False
 
 # You can also use the verify functions of the various libraries for the same purpose
 
