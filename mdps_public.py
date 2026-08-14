@@ -15,7 +15,7 @@ def login_user(username,password):
 	data = c.fetchall()
 	return data
 
-    elif choice == "SignUp":
+ #   elif choice == "SignUp":
        st.subheader("Create an Account")
 	new_user = st.text_input('Username')
 	new_passwd = st.text_input('Password',type='password')
