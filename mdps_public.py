@@ -69,7 +69,8 @@ def main():
 					st.dataframe(clean_db)
 			else:
 				st.warning("Incorrect Username/Password")
-    elif choice == "SignUp":
+	
+	elif choice == "SignUp":
        st.subheader("Create an Account")
 	new_user = st.text_input('Username')
 	new_passwd = st.text_input('Password',type='password')
