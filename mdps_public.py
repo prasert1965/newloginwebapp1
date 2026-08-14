@@ -17,7 +17,7 @@ def login_user(username,password):
 import streamlit as st
 import pandas as pd
 
-elif choice == "SignUp":
+#elif choice == "SignUp":
        st.subheader("Create an Account")
 	new_user = st.text_input('Username')
 	new_passwd = st.text_input('Password',type='password')
