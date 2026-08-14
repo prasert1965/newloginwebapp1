@@ -16,7 +16,7 @@ def login_user(username,password):
 	return data
 
  #   elif choice == "SignUp":
-       st.subheader("Create an Account")
+ #      st.subheader("Create an Account")
 	new_user = st.text_input('Username')
 	new_passwd = st.text_input('Password',type='password')
 	if st.button('SignUp'):
