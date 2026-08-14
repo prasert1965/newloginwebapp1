@@ -15,6 +15,25 @@ def login_user(username,password):
 	data = c.fetchall()
 	return data
 
+elif choice == "SignUp":
+       st.subheader("Create an Account")
+	new_user = st.text_input('Username')
+	new_passwd = st.text_input('Password',type='password')
+	if st.button('SignUp'):
+		create_usertable()
+		add_userdata(new_user,make_hashes(new_passwd))
+		st.success("You have successfully created an account.Go to the Login Menu to login")
+
+import hashlib
+def make_hashes(password):
+	return hashlib.sha256(str.encode(password)).hexdigest()
+
+def check_hashes(password,hashed_text):
+	if make_hashes(password) == hashed_text:
+		return hashed_text
+	return False
+
+# You can also use the verify functions of the various libraries for the same purpose
 import streamlit as st
 import pandas as pd
 from streamlit_option_menu import option_menu
