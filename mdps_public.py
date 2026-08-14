@@ -40,6 +40,7 @@ def main():
 	if choice == "Home":
 		st.subheader("Home")
 	    st.subheader("This is Web app for prediction alpha thalassemia carriers")
+	
 	elif choice == "Login":
 		st.subheader("Login Section")
 		
