@@ -38,7 +38,7 @@ def main():
 	choice = st.sidebar.selectbox("Menu",menu)
 
 	if choice == "Home":
-		st.subheader("Home This is Web app for prediction alpha thalassemia carriers")
+		st.subheader("This is Web app for prediction alpha thalassemia carriers")
 	
 	elif choice == "Login":
 		st.subheader("Login Section")
