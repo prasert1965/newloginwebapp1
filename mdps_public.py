@@ -74,7 +74,6 @@ def main():
 
 		new_user = st.sidebar.text_input('Username')
 		new_passwd = st.sidebar.text_input('Password',type='password')
-
 	    if st.sidebar.button('SignUp'):
 		   create_usertable()
 		   add_userdata(new_user,make_hashes(new_passwd))
