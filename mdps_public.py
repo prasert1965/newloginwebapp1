@@ -18,13 +18,13 @@ import streamlit as st
 import pandas as pd
 
 #elif choice == "SignUp":
-       st.subheader("Create an Account")
-	new_user = st.text_input('Username')
-	new_passwd = st.text_input('Password',type='password')
-	if st.button('SignUp'):
-		create_usertable()
-		add_userdata(new_user,make_hashes(new_passwd))
-		st.success("You have successfully created an account.Go to the Login Menu to login")
+  #     st.subheader("Create an Account")
+#	new_user = st.text_input('Username')
+#	new_passwd = st.text_input('Password',type='password')
+#	if st.button('SignUp'):
+#		create_usertable()
+#		add_userdata(new_user,make_hashes(new_passwd))
+#		st.success("You have successfully created an account.Go to the Login Menu to login")
 		
 import hashlib
 def make_hashes(password):
