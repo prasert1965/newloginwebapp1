@@ -15,3 +15,12 @@ def login_user(username,password):
 	data = c.fetchall()
 	return data
 
+elif choice == "SignUp":
+       st.subheader("Create an Account")
+	new_user = st.text_input('Username')
+	new_passwd = st.text_input('Password',type='password')
+	if st.button('SignUp'):
+		create_usertable()
+		add_userdata(new_user,make_hashes(new_passwd))
+		st.success("You have successfully created an account.Go to the Login Menu to login")
+		
