@@ -37,7 +37,7 @@ def check_hashes(password,hashed_text):
 
 # You can also use the verify functions of the various libraries for the same purpose
 
-elif choice == "Login":
+        elif choice == "Login":
 		user = st.sidebar.text_input('Username')
 		passwd = st.sidebar.text_input('Password',type='password')
 		if st.sidebar.checkbox('Login') :
