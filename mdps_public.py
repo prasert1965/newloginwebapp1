@@ -37,20 +37,20 @@ import pandas as pd
 
 # You can also use the verify functions of the various libraries for the same purpose
 
-        elif choice == "Login":
-		user = st.sidebar.text_input('Username')
-		passwd = st.sidebar.text_input('Password',type='password')
-		if st.sidebar.checkbox('Login') :
-			create_usertable()
-			hashed_pswd = make_hashes(passwd)
-			result = login_user(user,check_hashes(passwd,hashed_pswd))
-			if result:
-				st.success("Logged In as {}".format(user))
+#        elif choice == "Login":
+#		user = st.sidebar.text_input('Username')
+#		passwd = st.sidebar.text_input('Password',type='password')
+#		if st.sidebar.checkbox('Login') :
+#			create_usertable()
+#			hashed_pswd = make_hashes(passwd)
+#			result = login_user(user,check_hashes(passwd,hashed_pswd))
+#			if result:
+#				st.success("Logged In as {}".format(user))
 
 				# Tasks For Only Logged In Users
-				task = st.selectbox('Select Task',['Add Posts','Manage Blog','Profile'])
-				if task == "Add Posts":
-					st.subheader("Add Articles")
+#				task = st.selectbox('Select Task',['Add Posts','Manage Blog','Profile'])
+#				if task == "Add Posts":
+#					st.subheader("Add Articles")
 					....
 # Security
 #passlib,hashlib,bcrypt,scrypt
