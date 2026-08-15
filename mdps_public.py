@@ -129,7 +129,7 @@ def main():
 				""", height=60)
 		
 		else:
- 	 		st.warning("Incorrect Username/Password")
+ 	 		st.sidebar.warning("Incorrect Username/Password")
 
 		
 	
