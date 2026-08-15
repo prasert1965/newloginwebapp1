@@ -158,7 +158,7 @@ def EA_Alpha_thal_prediction(input_data):
 
 	if (prediction[0] == 0):
    		return 'This person is alpha thalassemia carrier'
-	else:
+	 else:
    		return 'This person is not alpha thalassemia carrier'
 
 # giving a title  
