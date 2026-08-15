@@ -98,7 +98,7 @@ else:
 #	st.title('Web for prediction Alpha Thalassemia carrier')   
     
 # getting the input data from the user
-	col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4 = st.columns(4)
 	with col1:
     	AGE = st.text_input('AGE (years)')
 	with col2:
