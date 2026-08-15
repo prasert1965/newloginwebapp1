@@ -150,3 +150,17 @@ def main():
 
 if __name__ == '__main__':
 	main()
+#st.title("รายงานผลการทำนาย")
+# สร้างปุ่มพิมพ์หน้าเว็บ
+components.html("""
+    <button onclick="window.parent.print()" style="
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;">
+        🖨️ พิมพ์รายงาน (Print / Save as PDF)
+    </button>
+""", height=60)
