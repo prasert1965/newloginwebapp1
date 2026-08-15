@@ -109,7 +109,8 @@ def main():
 		   		st.write('Reported by ............................ ')   
 			with col3:
 		   		st.write('Approved by ............................ ')
-		   		st.write(f"**Date Prediction:** {current_time_str}")	
+		   	
+			st.write(f"**Date Prediction:** {current_time_str}")	
 
 			#st.title("รายงานผลการทำนาย")
 			# สร้างปุ่มพิมพ์หน้าเว็บ
