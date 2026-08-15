@@ -145,23 +145,7 @@ def EA_Alpha_thal_prediction(input_data):
 #	st.title('Web for prediction Alpha Thalassemia carrier')   
     
        
-# code for Prediction
-diagnosis = ''
-    
-# creating a button for Prediction 
-        
-if st.button('Prediction result Pls. Click'):        
-   	diagnosis = EA_Alpha_thal_prediction([AGE, HCT, HGB, RBC, MCV, MCH, MCHC, RDW])               
-st.success(diagnosis)
-       
-col1, col2, col3, = st.columns(3)
-with col1:
-    st.write('Predicted by ..Phrae ADA ML.. ') 
-with col2:
-    st.write('Reported by ............................ ')   
-with col3:
-    st.write('Approved by ............................ ')
-    st.write(f"**Date Prediction:** {current_time_str}")	
+
 				#task = st.selectbox("Task",["Add Post","Analytics","Profiles"])
 				#if task == "Add Post":
 				#	st.subheader("Add Your Post")
