@@ -100,10 +100,10 @@ def EA_Alpha_thal_prediction(input_data):
 	print(input_data_as_numpy_array)
 	print(prediction)
 
-if (prediction[0] == 0):
-   	return 'This person is alpha thalassemia carrier'
-else:
-   	return 'This person is not alpha thalassemia carrier'
+	if (prediction[0] == 0):
+   		return 'This person is alpha thalassemia carrier'
+	else:
+   		return 'This person is not alpha thalassemia carrier'
 
 # giving a title  
 #	st.title('Web for prediction Alpha Thalassemia carrier')   
