@@ -117,7 +117,7 @@ with col4:
    	RDW = st.text_input('RDW (fl)')
        
 # code for Prediction
-    diagnosis = ''
+diagnosis = ''
     
 # creating a button for Prediction 
         
