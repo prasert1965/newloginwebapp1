@@ -40,15 +40,16 @@ from datetime import datetime
 tz_thai = pytz.timezone('Asia/Bangkok')
 now_thai = datetime.now(tz_thai)
 current_time_str = now_thai.strftime("%d/%m/%y time %H:%M minute.")
+
 loaded_model = pickle.load(open('EAtrained_model.sav', 'rb'))
 
 def EA_Alpha_thal_prediction(input_data):
 
-# changing the input_data to numpy array
-input_data_as_numpy_array = np.asarray(input_data)
+	# changing the input_data to numpy array
+	input_data_as_numpy_array = np.asarray(input_data)
 
-# reshape the array as we are predicting for one instance
-input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
+	# reshape the array as we are predicting for one instance
+	input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 
 	prediction = loaded_model.predict(input_data_reshaped)
 	print(input_data_as_numpy_array)
@@ -59,7 +60,7 @@ input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 	else:
     return 'This person is not alpha thalassemia carrier'
 # giving a title  
-	st.title('Web for prediction Alpha Thalassemia carrier')   
+	# st.title('Web for prediction Alpha Thalassemia carrier')   
 def main():
 #	"""Simple Login App"""
 
