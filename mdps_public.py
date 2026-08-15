@@ -77,7 +77,7 @@ def main():
 		else:
  			st.warning("Incorrect Username/Password")
 
-elif choice == "SignUp":
+	elif choice == "SignUp":
 	st.subheader("Create an Account")
 
 	new_user = st.sidebar.text_input('Username')
