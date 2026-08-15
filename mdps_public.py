@@ -50,7 +50,7 @@ loaded_model = pickle.load(open('EAtrained_model.sav', 'rb'))
 def main():
 #	"""Simple Login App"""
 
-	st.title("Simple Login App")
+st.title("Simple Login App")
 
 menu = ["Home","Login","SignUp"]
 choice = st.sidebar.selectbox("Menu",menu)
