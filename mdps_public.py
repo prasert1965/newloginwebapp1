@@ -70,9 +70,9 @@ def main():
 			hashed_pswd = make_hashes(password)
 
 			result = login_user(username,check_hashes(password,hashed_pswd))
-		if result:
-
-			st.success("Logged In as {}".format(username))
+			
+			if result:
+				st.success("Logged In as {}".format(username))
 
 		else:
  			st.warning("Incorrect Username/Password")
