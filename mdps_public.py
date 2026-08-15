@@ -55,21 +55,21 @@ st.title("Simple Login App")
 menu = ["Home","Login","SignUp"]
 choice = st.sidebar.selectbox("Menu",menu)
 
-if choice == "Home":
-	st.subheader("This is Web app for prediction alpha thalassemia carriers")
-	st.write('In 2024, From Phrae Adaboost model on Dataset3 demonstrated acc 97% sen 100% spec 95% AUC 0.974. In 2026, A performance evaluation of the adaboost model in the Khon Kaen population showed acc 63% Sen 93.4% Spec 57.4% PPV 30.9% NPV 97.7% AUC 0.754.')
+	if choice == "Home":
+		st.subheader("This is Web app for prediction alpha thalassemia carriers")
+		st.write('In 2024, From Phrae Adaboost model on Dataset3 demonstrated acc 97% sen 100% spec 95% AUC 0.974. In 2026, A performance evaluation of the adaboost model in the Khon Kaen population showed acc 63% Sen 93.4% Spec 57.4% PPV 30.9% NPV 97.7% AUC 0.754.')
 
-elif choice == "Login":
-	st.subheader("Login Section")
+	elif choice == "Login":
+		st.subheader("Login Section")
 		
-	username = st.sidebar.text_input("User Name")
-	password = st.sidebar.text_input("Password",type='password')
-	if st.sidebar.checkbox("Login"):
+		username = st.sidebar.text_input("User Name")
+		password = st.sidebar.text_input("Password",type='password')
+		if st.sidebar.checkbox("Login"):
 		# if password == '12345':
-		create_usertable()
-		hashed_pswd = make_hashes(password)
+			create_usertable()
+			hashed_pswd = make_hashes(password)
 
-		result = login_user(username,check_hashes(password,hashed_pswd))
+			result = login_user(username,check_hashes(password,hashed_pswd))
 		if result:
 
 			st.success("Logged In as {}".format(username))
