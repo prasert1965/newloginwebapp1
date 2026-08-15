@@ -95,6 +95,23 @@ def main():
 		   	MCHC = st.text_input('MCHC (g/dl)')
 		with col4:
 		   	RDW = st.text_input('RDW (fl)')
+		# code for Prediction
+		diagnosis = ''
+    
+		# creating a button for Prediction 
+        
+		if st.button('Prediction result Pls. Click'):        
+		   	diagnosis = EA_Alpha_thal_prediction([AGE, HCT, HGB, RBC, MCV, MCH, MCHC, RDW])               
+		st.success(diagnosis)
+       
+		col1, col2, col3, = st.columns(3)
+		with col1:
+		    st.write('Predicted by ..Phrae ADA ML.. ') 
+		with col2:
+		    st.write('Reported by ............................ ')   
+		with col3:
+		    st.write('Approved by ............................ ')
+		    st.write(f"**Date Prediction:** {current_time_str}")	
 	
 	elif choice == "SignUp":
 		st.subheader("Create an Account")
