@@ -103,12 +103,12 @@ def main():
        
 				col1, col2, col3, = st.columns(3)
 				with col1:
-		    		st.write('Predicted by ..Phrae ADA ML.. ') 
+		    	st.write('Predicted by ..Phrae ADA ML.. ') 
 				with col2:
-		    		st.write('Reported by ............................ ')   
+		    	st.write('Reported by ............................ ')   
 				with col3:
-		    		st.write('Approved by ............................ ')
-		    		st.write(f"**Date Prediction:** {current_time_str}")	
+		    	st.write('Approved by ............................ ')
+		    	st.write(f"**Date Prediction:** {current_time_str}")	
 		else:
  			st.warning("Incorrect Username/Password")
 
