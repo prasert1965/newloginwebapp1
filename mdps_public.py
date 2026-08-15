@@ -70,15 +70,15 @@ def main():
 					st.success("Logged In as {}".format(username))
 					def EA_Alpha_thal_prediction(input_data):
 
-    				# changing the input_data to numpy array
-     				input_data_as_numpy_array = np.asarray(input_data)
+    					# changing the input_data to numpy array
+     					input_data_as_numpy_array = np.asarray(input_data)
 
-	    			# reshape the array as we are predicting for one instance
-    	 			input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
+	    				# reshape the array as we are predicting for one instance
+    	 				input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 
-     				prediction = loaded_model.predict(input_data_reshaped)
-     				print(input_data_as_numpy_array)
-     				print(prediction)
+     					prediction = loaded_model.predict(input_data_reshaped)
+     					print(input_data_as_numpy_array)
+     					print(prediction)
 
      				if (prediction[0] == 0):
       					return 'This person is alpha thalassemia carrier'
