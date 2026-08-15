@@ -77,6 +77,17 @@ elif choice == "Login":
 			else:
  				st.warning("Incorrect Username/Password")
 
+elif choice == "SignUp":
+	st.subheader("Create an Account")
+
+	new_user = st.sidebar.text_input('Username')
+	new_passwd = st.sidebar.text_input('Password',type='password')
+
+	if st.sidebar.button('SignUp'):
+		   create_usertable()
+		   add_userdata(new_user,make_hashes(new_passwd))
+		   st.success("You have successfully created an account.Go to the Login Menu to login")
+
 def EA_Alpha_thal_prediction(input_data):
 
 	# changing the input_data to numpy array
@@ -146,19 +157,9 @@ with col3:
 				#	st.dataframe(clean_db)
 
 
-elif choice == "SignUp":
-	st.subheader("Create an Account")
-
-	new_user = st.sidebar.text_input('Username')
-	new_passwd = st.sidebar.text_input('Password',type='password')
-
-	if st.sidebar.button('SignUp'):
-		   create_usertable()
-		   add_userdata(new_user,make_hashes(new_passwd))
-		   st.success("You have successfully created an account.Go to the Login Menu to login")
-
 if __name__ == '__main__':
 	main()
+
 #st.title("รายงานผลการทำนาย")
 # สร้างปุ่มพิมพ์หน้าเว็บ
 components.html("""
