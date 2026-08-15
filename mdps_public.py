@@ -50,11 +50,11 @@ def main():
 	menu = ["Home","Login","SignUp"]
 	choice = st.sidebar.selectbox("Menu",menu)
 
-	if choice == "Home":
+if choice == "Home":
 		st.subheader("This is Web app for prediction alpha thalassemia carriers")
 		st.write('In 2024, From Phrae Adaboost model on Dataset3 demonstrated acc 97% sen 100% spec 95% AUC 0.974. In 2026, A performance evaluation of the adaboost model in the Khon Kaen population showed acc 63% Sen 93.4% Spec 57.4% PPV 30.9% NPV 97.7% AUC 0.754.')
 
-	elif choice == "Login":
+elif choice == "Login":
 		st.subheader("Login Section")
 		
 		username = st.sidebar.text_input("User Name")
@@ -81,47 +81,47 @@ def EA_Alpha_thal_prediction(input_data):
 	print(input_data_as_numpy_array)
 	print(prediction)
 
-if (prediction[0] == 0):
+	if (prediction[0] == 0):
     return 'This person is alpha thalassemia carrier'
-else:
+	else:
     return 'This person is not alpha thalassemia carrier'
 # giving a title  
-st.title('Web for prediction Alpha Thalassemia carrier')   
+	st.title('Web for prediction Alpha Thalassemia carrier')   
     
 # getting the input data from the user
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-    AGE = st.text_input('AGE (years)')
-with col2:
-    HCT = st.text_input('Hematocrit (%)')
-with col3:
-    HGB = st.text_input('Hemaglobin (g/dl)')
-with col4:
-    RBC = st.text_input('RBC count(10^6 cells/cumm')
-with col1:
-    MCV = st.text_input('MCV (fl)')
-with col2:
-    MCH = st.text_input('MCH (pg)')
-with col3:
-    MCHC = st.text_input('MCHC (g/dl)')
-with col4:
-    RDW = st.text_input('RDW (fl)')
+	col1, col2, col3, col4 = st.columns(4)
+	with col1:
+    	AGE = st.text_input('AGE (years)')
+	with col2:
+    	HCT = st.text_input('Hematocrit (%)')
+	with col3:
+    	HGB = st.text_input('Hemaglobin (g/dl)')
+	with col4:
+    	RBC = st.text_input('RBC count(10^6 cells/cumm')
+	with col1:
+    	MCV = st.text_input('MCV (fl)')
+	with col2:
+    	MCH = st.text_input('MCH (pg)')
+	with col3:
+    	MCHC = st.text_input('MCHC (g/dl)')
+	with col4:
+    	RDW = st.text_input('RDW (fl)')
        
 # code for Prediction
     diagnosis = ''
     
 # creating a button for Prediction 
         
-if st.button('Prediction result Pls. Click'):        
-    diagnosis = EA_Alpha_thal_prediction([AGE, HCT, HGB, RBC, MCV, MCH, MCHC, RDW])               
-st.success(diagnosis)
+	if st.button('Prediction result Pls. Click'):        
+    	diagnosis = EA_Alpha_thal_prediction([AGE, HCT, HGB, RBC, MCV, MCH, MCHC, RDW])               
+	st.success(diagnosis)
        
-col1, col2, col3, = st.columns(3)
-with col1:
+	col1, col2, col3, = st.columns(3)
+	with col1:
     st.write('Predicted by ..Phrae ADA ML.. ') 
-with col2:
+	with col2:
     st.write('Reported by ............................ ')   
-with col3:
+	with col3:
     st.write('Approved by ............................ ')
     st.write(f"**Date Prediction:** {current_time_str}")	
 				#task = st.selectbox("Task",["Add Post","Analytics","Profiles"])
