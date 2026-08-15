@@ -65,15 +65,15 @@ def main():
 		username = st.sidebar.text_input("User Name")
 		password = st.sidebar.text_input("Password",type='password')
 		if st.sidebar.checkbox("Login"):
-			#if password == '12345':
-				create_usertable()
-				hashed_pswd = make_hashes(password)
+		#if password == '12345':
+			create_usertable()
+			hashed_pswd = make_hashes(password)
 
-				result = login_user(username,check_hashes(password,hashed_pswd))
-			
-				if result:
+			result = login_user(username,check_hashes(password,hashed_pswd))
+		
+			if result:
 				
-				st.success("Logged In as {}".format(username))
+			st.success("Logged In as {}".format(username))
 
 				# getting the input data from the user
 				col1, col2, col3, col4 = st.columns(4)
