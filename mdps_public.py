@@ -135,8 +135,8 @@ with col3:
 				#	user_result = view_all_users()
 				#	clean_db = pd.DataFrame(user_result,columns=["Username","Password"])
 				#	st.dataframe(clean_db)
-	else:
-	st.warning("Incorrect Username/Password")
+else:
+ st.warning("Incorrect Username/Password")
 
 	elif choice == "SignUp":
 		st.subheader("Create an Account")
