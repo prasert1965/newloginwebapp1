@@ -136,10 +136,10 @@ def main():
 	elif choice == "SignUp":
 		st.subheader("Create an Account")
 
-		new_user = st.sidebar.text_input('Username')
-		new_passwd = st.sidebar.text_input('Password',type='password')
+		new_user = st.text_input('Username')
+		new_passwd = st.text_input('Password',type='password')
 
-		if st.sidebar.button('SignUp'):
+		if st.button('SignUp'):
 		   create_usertable()
 		   add_userdata(new_user,make_hashes(new_passwd))
 		   st.success("You have successfully created an account.Go to the Login Menu to login")
