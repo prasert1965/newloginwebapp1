@@ -25,6 +25,7 @@ def check_hashes(password,hashed_text):
 	return False
 
 # You can also use the verify functions of the various libraries for the same purpose
+
 import streamlit as st
 import pandas as pd
 from streamlit_option_menu import option_menu
@@ -52,13 +53,13 @@ def EA_Alpha_thal_prediction(input_data):
 	input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 
 	prediction = loaded_model.predict(input_data_reshaped)
-	print(input_data_as_numpy_array)
-	print(prediction)
+		print(input_data_as_numpy_array)
+		print(prediction)
 
 	if (prediction[0] == 0):
-    return 'This person is alpha thalassemia carrier'
+    	return 'This person is alpha thalassemia carrier'
 	else:
-    return 'This person is not alpha thalassemia carrier'
+    	return 'This person is not alpha thalassemia carrier'
 # giving a title  
 	# st.title('Web for prediction Alpha Thalassemia carrier')   
 def main():
