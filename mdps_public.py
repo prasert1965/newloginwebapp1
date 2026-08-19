@@ -39,7 +39,7 @@ from fpdf import FPDF
 import streamlit.components.v1 as components
 from datetime import datetime
 
-#MainMenu {
+MainMenu {
   visibility: hidden;
 }
 
