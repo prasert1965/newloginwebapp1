@@ -42,7 +42,7 @@ from datetime import datetime
 # Custom CSS to hide the GitHub icon and toolbar elements
 hide_github_icon = """
     <style>
-    #GithubIcon {
+    GithubIcon {
         visibility: hidden;
     }
     .styles_viewerBadge__1yB5_ {
