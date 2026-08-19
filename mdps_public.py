@@ -39,6 +39,17 @@ from fpdf import FPDF
 import streamlit.components.v1 as components
 from datetime import datetime
 
+# Hide the GitHub icon and standard Streamlit headers/footers
+hide_github_icon = """
+    <style>
+    #GithubIcon {visibility: hidden;}
+    .styles_viewerBadge__1yB5_ {display: none;}
+    .viewerBadge_link__1S137 {display: none;}
+    .viewerBadge_text__1JaDK {display: none;}
+    </style>
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 tz_thai = pytz.timezone('Asia/Bangkok')
 now_thai = datetime.now(tz_thai)
 current_time_str = now_thai.strftime("%d/%m/%y time %H:%M minute.")
