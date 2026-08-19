@@ -38,6 +38,7 @@ import tempfile
 from fpdf import FPDF
 import streamlit.components.v1 as components
 from datetime import datetime
+
 # Custom CSS to hide the GitHub icon and toolbar elements
 hide_github_icon = """
     <style>
