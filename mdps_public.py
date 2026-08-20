@@ -40,12 +40,13 @@ import streamlit.components.v1 as components
 from datetime import datetime
 
 # Custom CSS to hide the GitHub icon
-hide_Github_Icon = """
-<style>
-#GithubIcon {
-    visibility: hidden;
-}
-</style>
+hide_style = """
+    <style>
+    #GithubIcon {visibility: hidden;}
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
 """
 
 tz_thai = pytz.timezone('Asia/Bangkok')
@@ -62,7 +63,7 @@ def main():
 #	"""Simple Login App"""
 
 #st.title("Simple Login App")
-	st.markdown(hide_Github_Icon, unsafe_allow_html=True)
+	st.markdown(hide_style, unsafe_allow_html=True)
 
 	menu = ["Home","Login","SignUp"]
 	choice = st.sidebar.selectbox("Menu",menu)
