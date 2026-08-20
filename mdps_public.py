@@ -58,7 +58,7 @@ loaded_model = pickle.load(open('EAtrained_model.sav', 'rb'))
 	# st.title('Web for prediction Alpha Thalassemia carrier')   
 def main():
 #	"""Simple Login App"""
-
+st.markdown(hide_style, unsafe_allow_html=True)
 #st.title("Simple Login App")
 	
 	menu = ["Home","Login","SignUp"]
