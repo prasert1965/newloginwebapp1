@@ -39,6 +39,15 @@ from fpdf import FPDF
 import streamlit.components.v1 as components
 from datetime import datetime
 
+# Custom CSS to hide the GitHub icon
+hide_github_icon = """
+    <style>
+    #GithubIcon {
+        visibility: hidden;
+    }
+    </style>
+"""
+
 tz_thai = pytz.timezone('Asia/Bangkok')
 now_thai = datetime.now(tz_thai)
 current_time_str = now_thai.strftime("%d/%m/%y time %H:%M minute.")
@@ -52,7 +61,7 @@ def main():
 #	"""Simple Login App"""
 
 #st.title("Simple Login App")
-
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 	menu = ["Home","Login","SignUp"]
 	choice = st.sidebar.selectbox("Menu",menu)
 
