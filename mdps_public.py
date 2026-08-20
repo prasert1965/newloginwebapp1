@@ -52,7 +52,7 @@ tz_thai = pytz.timezone('Asia/Bangkok')
 now_thai = datetime.now(tz_thai)
 current_time_str = now_thai.strftime("%d/%m/%y time %H:%M minute.")
 
-st.markdown(hide_github_icon, unsafe_allow_html=True)
+	st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 loaded_model = pickle.load(open('EAtrained_model.sav', 'rb'))
 
