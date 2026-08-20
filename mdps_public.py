@@ -61,7 +61,7 @@ def main():
 #	"""Simple Login App"""
 
 #st.title("Simple Login App")
-st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 	menu = ["Home","Login","SignUp"]
 	choice = st.sidebar.selectbox("Menu",menu)
 
@@ -189,6 +189,7 @@ def EA_Alpha_thal_prediction(input_data):
 				#	clean_db = pd.DataFrame(user_result,columns=["Username","Password"])
 				#	st.dataframe(clean_db)
 
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 if __name__ == '__main__':
 	main()
