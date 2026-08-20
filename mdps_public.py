@@ -62,7 +62,7 @@ def main():
 #	"""Simple Login App"""
 
 #st.title("Simple Login App")
-st.markdown(hide_github_icon, unsafe_allow_html=True)
+st.markdown(hide_menu, unsafe_allow_html=True)
 
 	menu = ["Home","Login","SignUp"]
 	choice = st.sidebar.selectbox("Menu",menu)
