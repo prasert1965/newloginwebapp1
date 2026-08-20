@@ -65,11 +65,11 @@ def main():
 	choice = st.sidebar.selectbox("Menu",menu)
 	
 	if choice == "Home":
-		st.title("This is Web app for prediction alpha thalassemia carrier")
+		st.subheader("This is Web app for prediction alpha thalassemia carrier")
 		st.write('In 2024, From Phrae Adaboost model on Dataset3 demonstrated acc 97% sen 100% spec 95% AUC 0.974. In 2026, A performance evaluation of the adaboost model in the Khon Kaen population showed acc 63% Sen 93.4% Spec 57.4% PPV 30.9% NPV 97.7% AUC 0.754.')
         	
 	elif choice == "Login":
-		st.title("Alpha thalassemia carrier prediction useing Adabooth ML")
+		st.subheader("Alpha thalassemia carrier prediction useing Adabooth ML")
 		
 		username = st.sidebar.text_input("User Name")
 		password = st.sidebar.text_input("Password",type='password')
