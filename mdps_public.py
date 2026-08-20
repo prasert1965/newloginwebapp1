@@ -41,11 +41,11 @@ from datetime import datetime
 
 # Custom CSS to hide the GitHub icon
 hide_github_icon = """
-    <style>
-    #GithubIcon {
-        visibility: hidden;
-    }
-    </style>
+<style>
+#GithubIcon {
+    visibility: hidden;
+}
+</style>
 """
 
 tz_thai = pytz.timezone('Asia/Bangkok')
