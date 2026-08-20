@@ -40,9 +40,9 @@ import streamlit.components.v1 as components
 from datetime import datetime
 
 # Custom CSS to hide the GitHub icon
-hide_menu = """
+hide_github_icon = """
 <style>
-#MainMenu {
+#GithubIcon {
     visibility: hidden;
 }
 </style>
@@ -62,7 +62,7 @@ def main():
 #	"""Simple Login App"""
 
 #st.title("Simple Login App")
-	st.markdown(hide_menu, unsafe_allow_html=True)
+	st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 	menu = ["Home","Login","SignUp"]
 	choice = st.sidebar.selectbox("Menu",menu)
