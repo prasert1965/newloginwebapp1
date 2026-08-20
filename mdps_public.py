@@ -52,6 +52,8 @@ tz_thai = pytz.timezone('Asia/Bangkok')
 now_thai = datetime.now(tz_thai)
 current_time_str = now_thai.strftime("%d/%m/%y time %H:%M minute.")
 
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 loaded_model = pickle.load(open('EAtrained_model.sav', 'rb'))
 
 
@@ -154,7 +156,6 @@ def main():
 		   create_usertable()
 		   add_userdata(new_user,make_hashes(new_passwd))
 		   st.success("You have successfully created an account.Go to the Login Menu to login")
-st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 def EA_Alpha_thal_prediction(input_data):
 
