@@ -47,6 +47,7 @@ hide_github_icon = """
 }
 </style>
 """
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 tz_thai = pytz.timezone('Asia/Bangkok')
 now_thai = datetime.now(tz_thai)
@@ -65,7 +66,7 @@ def main():
 
 	menu = ["Home","Login","SignUp"]
 	choice = st.sidebar.selectbox("Menu",menu)
-	st.markdown(hide_github_icon, unsafe_allow_html=True)
+	
 	if choice == "Home":
 		st.subheader("This is Web app for prediction alpha thalassemia carriers")
 		st.write('In 2024, From Phrae Adaboost model on Dataset3 demonstrated acc 97% sen 100% spec 95% AUC 0.974. In 2026, A performance evaluation of the adaboost model in the Khon Kaen population showed acc 63% Sen 93.4% Spec 57.4% PPV 30.9% NPV 97.7% AUC 0.754.')
