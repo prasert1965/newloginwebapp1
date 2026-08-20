@@ -43,7 +43,7 @@ from datetime import datetime
 hide_style = """
     <style>
     #GithubIcon {visibility: hidden;}
-    #MainMenu {visibility: hidden;}
+   
     footer {visibility: hidden;}
     header {visibility: hidden;}
     </style>
