@@ -113,6 +113,11 @@ def main():
 				
 				st.success(diagnosis)
        
+				# getting the input data from the user
+				col1 = st.columns(1)
+				with col1:
+					HbA2 = st.text_input('HbA2 (%)')
+				
 				col1, col2, col3, = st.columns(3)
 				with col1:
 	  				st.write('Predicted by ..Phrae ADA ML.. ') 
