@@ -51,7 +51,7 @@ current_time_str = now_thai.strftime("%d/%m/%y time %H:%M minute.")
 
 loaded_model = pickle.load(open('EAtrained_model.sav', 'rb'))
 
-loaded_model = pickle.load(open('alphabetatrained_model.sav', 'rb'))
+#loaded_model = pickle.load(open('alphabetatrained_model.sav', 'rb'))
 
 # giving a title  
 	# st.title('Web for prediction Alpha Thalassemia carrier')   
@@ -101,8 +101,8 @@ def main():
 		   			MCHC = st.text_input('MCHC (g/dl)')
 				with col4:
 		   			RDW = st.text_input('RDW (fl)')
-				with col1:
-					HbA2 = st.text_input('HbA2 (%)')				
+				#with col1:
+				#	HbA2 = st.text_input('HbA2 (%)')				
 				
 				# code for Prediction
 				diagnosis = ''
@@ -115,11 +115,11 @@ def main():
 				
 				st.success(diagnosis)
 				
-				if st.button('Prediction Beta thal. Click'):        
+				#if st.button('Prediction Beta thal. Click'):        
 		   		    
-					diagnosis = EA_Alpha_thal_prediction([AGE, HCT, HGB, RBC, MCV, MCH, MCHC, RDW, HbA2])  
+				#	diagnosis = EA_Alpha_thal_prediction([AGE, HCT, HGB, RBC, MCV, MCH, MCHC, RDW, HbA2])  
 				
-				st.success(diagnosis)
+				#st.success(diagnosis)
        
 				# getting the input data from the user
 				
