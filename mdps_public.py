@@ -113,6 +113,10 @@ def main():
 		   		   
 					diagnosis = EA_Alpha_thal_prediction([AGE, HCT, HGB, RBC, MCV, MCH, MCHC, RDW])               
 				
+				if st.button('Prediction Beta thal. Click'):        
+		   		   
+					diagnosis = EA_Alpha_thal_prediction([AGE, HCT, HGB, RBC, MCV, MCH, MCHC, RDW])  
+				
 				st.success(diagnosis)
        
 				# getting the input data from the user
