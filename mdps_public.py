@@ -42,7 +42,8 @@ from datetime import datetime
 hide_style = """
     <style>
     #GithubIcon {visibility: hidden;}
-    </style>
+    #MainMenu {visibility: hidden;}
+	</style>
 """
 
 tz_thai = pytz.timezone('Asia/Bangkok')
