@@ -102,7 +102,8 @@ def main():
 				with col4:
 		   			RDW = st.text_input('RDW (fl)')
 				with coi5: 
-				    %HbA2 = st.text_input('%HbA2 (%)')
+				    HbA2 = st.text_input('HbA2 (%)')
+				
 				# code for Prediction
 				diagnosis = ''
     
