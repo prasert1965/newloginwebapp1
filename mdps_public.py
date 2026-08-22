@@ -43,6 +43,7 @@ hide_style = """
     <style>
     #GithubIcon {visibility: hidden;}
     #MainMenu {visibility: hidden;}
+	Header {visibility: hidden;}
 	</style>
 """
 
