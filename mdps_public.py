@@ -84,7 +84,7 @@ def main():
 				st.success("Logged In as {}".format(username))
 
 				# getting the input data from the user
-				col1, col2, col3, col4 = st.columns(4)
+				col1, col2, col3, col4,col5 = st.columns(5)
 				with col1:
 			   		AGE = st.text_input('AGE (years)')
 				with col2:
@@ -101,6 +101,8 @@ def main():
 		   			MCHC = st.text_input('MCHC (g/dl)')
 				with col4:
 		   			RDW = st.text_input('RDW (fl)')
+				with coi5: 
+				    %HbA2 = st.text_input('%HbA2 (%)')
 				# code for Prediction
 				diagnosis = ''
     
@@ -138,7 +140,8 @@ def main():
 				""", height=60)
 		
 			else:
- 	 			st.sidebar.warning("Incorrect Username/Password")
+ 	 			
+				st.sidebar.warning("Incorrect Username/Password")
 
 		
 	
