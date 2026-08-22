@@ -101,7 +101,9 @@ def main():
 		   			MCHC = st.text_input('MCHC (g/dl)')
 				with col4:
 		   			RDW = st.text_input('RDW (fl)')
-								
+				with col1:
+					HbA2 = st.text_input('HbA2 (%)')				
+				
 				# code for Prediction
 				diagnosis = ''
     
@@ -114,9 +116,6 @@ def main():
 				st.success(diagnosis)
        
 				# getting the input data from the user
-				col1 = st.columns(1)
-				with col1:
-					HbA2 = st.text_input('HbA2 (%)')
 				
 				col1, col2, col3, = st.columns(3)
 				with col1:
