@@ -84,7 +84,7 @@ def main():
 				st.success("Logged In as {}".format(username))
 
 				# getting the input data from the user
-				col1, col2, col3, col4,col5 = st.columns(5)
+				col1, col2, col3, col4, col5 = st.columns(5)
 				with col1:
 			   		AGE = st.text_input('AGE (years)')
 				with col2:
